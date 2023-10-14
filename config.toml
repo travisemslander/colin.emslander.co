@@ -1,0 +1,11 @@
+baseURL = 'https://colin.emslander.co/'
+languageCode = 'en-us'
+title = 'Colin Emslander'
+theme = "m10c"
+
+[params]
+	author = 'Colin Emslander'
+	description = 'Just a kid who loves Roblox, bananas, and retro-gaming. Located in Minneapolis, MN'
+	avatar = 'colin-profile.jpg'
+
+
