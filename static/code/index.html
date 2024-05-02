@@ -1,49 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>my page</title>
+    <title>AMEX POINTS</title>
+    <style>
+        body {
+            
+        }
+        .credit-card {
+            position:relative;
+            width:400px;
+            height:250px;
+            background-color:blue;
+            padding:10px;
+        }
+        .magnetic-stripe {
+            position: relative;
+            width:100%;
+            background-color: black;
+            height: 40px;
+            top: 190px;
+        }
+    </style>
 </head>
 <body>
-<button>hi</button>
-<a href="other.html">click me</a>
-<p>
-    hello this is a website i made
-</p>
+    <button id="hi-button" class="green">hi</button>
+    <a href="other.html" class="green">click me</a>
+    <p>
+        hello this is a website i made
+    </p>
 
-<p>if this works a button should appear here <button>hello</button></p>
+    <p>if this works a button should appear here <button>hello</button></p>
 
+    <p>hello people
 
+<h1>THIS IS THE AMEX GAME</h1>
 
+    </p>
+    <p>uncool</p>
+    <a href="otherother.html" class="green">goto 3rd webpage</a>
+    <button class="green">button</button>
 
+    <div><span id="point-tracker">0</span> points</div>
+    <div class="credit-card">
+        <div class="magnetic-stripe"></div>
+    </div>
 
+    <script>
+        function joemom() {
+            var Amex = 'POINTS'
+            document.write(amexx)
+        }
+        
+        function windowSpace() { 
+            document.windowHeight;
+            console.log("the windowheight is "+document.windowHeight)
+        }
 
+        function hiButtonClicked() {
+            var name = prompt("What's your name?")
+            alert("Hello "+name+". Nice to meet you.")
+        }
+        
+        document.write('hello idiots')
 
+        document.querySelector('h1').style.backgroundColor = 'yellow'
 
+        windowSpace();
 
+        var hiButton = document.querySelector('#hi-button')
+        hiButton.addEventListener('click', hiButtonClicked)
 
+        var pointTracker = document.querySelector('#point-tracker')
 
+        document.querySelectorAll('.credit-card').forEach(function (e) {
+            e.addEventListener('click', function () {
+                var points = parseInt(pointTracker.innerText);
+                points += 1
+                pointTracker.innerText = points;
 
-
-<p>hello people
-
-</p>
-<p>uncool</p>
-<a href="otherother.html">goto 3rd webpage</a>
-<title>cool webpage</title>
-<button>button</button>
-<script>
-    function joemom() {
-        var Amex = 'POINTS'
-    
-    }
-    var amexx = 'POINT'
-    document.write(amexx)
-    function windowSpace() { 
-        document.windowHeight;
-        console.log("the windowheight is "+document.windowHeight)
-    }
-
-    windowSpace();
-</script>
+                var newCard = e.cloneNode(true)
+                document.querySelector('body').append(newCard);
+            })
+        })
+    </script>
 </body>
 </html>
